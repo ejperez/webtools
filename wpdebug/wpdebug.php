@@ -27,7 +27,7 @@ if ( ! function_exists( 'c_dump' ) ) {
  */
 if ( ! function_exists( 'f_dump' ) ) {
 	function f_dump( $data ) {
-		file_put_contents('/var/www/' . get_template() . '-fdump.txt', var_export($data, true));
+		file_put_contents('/var/www/' . get_template() . '-fdump.txt', var_export($data, true), FILE_APPEND);
 	}
 }
 
